@@ -17,6 +17,7 @@ public class user {
 
     @Then("^I can register successfully$")
     public void I_can_register() throws Throwable {
-        // userStep.getSuccessStatus();
+        userStep.getSuccessStatus();
+        userStep.ValidationJSONSchema("JSONSchema/registerSuccess.json");
     }
 }
